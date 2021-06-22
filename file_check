@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Feb 14 20:46:30 2021
+
+@author: lepotatoguy
+"""
+
+
+import os
+path = '/home/lepotatoguy/pjpeg/Scan 1 (copy)/dataset-final/processed'
+files=os.listdir(path)
+files.sort()
+files.remove("file_check")
+#print(files)
+
+file_name = ""
+file_name2 = ""
+for file in files:
+    if file.find("_t.jpg") != -1:
+        file_name = file.replace('_t.jpg','')
+        for i in range(0,len(files)):
+            file_name2 = files[i].replace('_p.jpg','')
+            if (file_name != file_name2) and (i == len(files)-1):
+                print(file)
+            elif file_name == file_name2:
+                break
+            else:
+                pass
+    elif file.find("_p.jpg") != -1:
+        file_name = file.replace('_p.jpg','')
+        for j in range(0,len(files)):
+            file_name2 = files[j].replace('_p.jpg','')
+            if (file_name != file_name2) and (j == len(files)-1):
+                print(file)
+            elif file_name == file_name2:
+                pass
+            else:
+                pass
+    else:
+        pass
