@@ -1,12 +1,9 @@
 import os
-path = '/home/lepotatoguy/pjpeg/Scan 1 (copy)/dataset-final/total (copy)'
+path = '/home/lepotatoguy/pjpeg/Scan 1 (copy)/qutubcomplex/train_2/5'
 files=os.listdir(path)
 #print(files)
 files.sort()
 files.remove("bulk_rename.py")
-files.remove("bulkdatasetrun.py")
-files.remove("script.txt")
-files.remove("script_final.txt")
 print(files)
 
 
