@@ -18,16 +18,19 @@ import time
 startTime = time.time()
 
 
-# path = '/home/user_name/pjpeg/Scan 1 (copy)/dataset-final/final/processed/all' #for linux
+# path = '/home/user/pjpeg/Scan 1 (copy)/dataset-final/final/processed/all' #for linux
 # path = "D:\\PJPEG\\final_dataset\\all" #for windows
-path = "/home/joyanta/pjpeg/original/"
+
+user = ""
+
+path = f"/home/{user}/pjpeg/original/"
 files = os.listdir(path)
 
 # removing unnecessary files
 # files.remove("get_size.py")
 
-destination_jpg = "/home/joyanta/pjpeg/original"
-destination_pjpeg = "/home/joyanta/pjpeg/pjpeg"
+destination_jpg = f"/home/{user}/pjpeg/original"
+destination_pjpeg = f"/home/{user}/pjpeg/pjpeg"
 
 
 exp = files  # all experiments will be in this variable
