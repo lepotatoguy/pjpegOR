@@ -1,0 +1,5 @@
+jpegtran -optimize -progressive -scans script.txt -outfile name_of_progressive_file_you_want_to_give.jpg name_of_file_you_want_to_test.jpg
+
+COCO_test2015_000000017516.jpg
+
+jpegtran -optimize -progressive -scans script.txt -outfile COCO_test2015_000000017516_t.jpg COCO_test2015_000000017516.jpg
