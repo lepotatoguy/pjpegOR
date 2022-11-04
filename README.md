@@ -2,12 +2,17 @@
 This work is for the paper of Proposing New Scan Script in photo for better image retrieval.
 
 ### Group Members:
-[Jannatun Noor](#)
-[Md. Nazrul Huda Shanto](#)
+[Jannatun Noor](https://sites.google.com/site/jannatun0abigzero/)
+
+[Md. Nazrul Huda Shanto](https://www.linkedin.com/in/nazrulhudashanto/)
+
 [Joyanta Jyoti Mondal](https://joyantamondal.com/)
-[Md. Golam Hossain](https://joyantamondal.com/)
-[Sriram Chellappan](#)
-[A. B. M. Alim Al Islam](#)
+
+[Md. Golam Hossain](https://www.linkedin.com/in/mghossain)
+
+[Sriram Chellappan](https://cse.usf.edu/~sriramc/)
+
+[A. B. M. Alim Al Islam](https://sites.google.com/site/abmalimalislam/)
 
 ## Paper Name: Orchestrating Image Retrieval and Storage over A Cloud System
 [Link](https://ieeexplore.ieee.org/abstract/document/9743811/)
