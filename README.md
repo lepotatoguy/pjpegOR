@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.1109%2FTCC.2022.3162790-blue)](https://doi.org/10.1109/TCC.2022.3162790)
+
 # About
 
 Official files of the paper, "Orchestrating Image Retrieval and Storage over A Cloud System".
