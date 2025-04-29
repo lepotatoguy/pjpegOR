@@ -1,8 +1,7 @@
-# pjpeg-research
+# About
 
-This repository contains files related to the paper:
+Official files of the paper, "Orchestrating Image Retrieval and Storage over A Cloud System".
 
-## Paper Name: Orchestrating Image Retrieval and Storage over A Cloud System
 [Link](https://ieeexplore.ieee.org/abstract/document/9743811/)
 
 ### Group Members:
