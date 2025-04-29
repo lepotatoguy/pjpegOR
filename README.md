@@ -1,21 +1,22 @@
 # pjpeg-research
-This work is for the paper of Proposing New Scan Script in photo for better image retrieval.
+
+This repository contains files related to the paper:
+
+## Paper Name: Orchestrating Image Retrieval and Storage over A Cloud System
+[Link](https://ieeexplore.ieee.org/abstract/document/9743811/)
 
 ### Group Members:
 [Jannatun Noor](https://sites.google.com/site/jannatun0abigzero/)
 
 [Md. Nazrul Huda Shanto](https://www.linkedin.com/in/nazrulhudashanto/)
 
-[Joyanta Jyoti Mondal](https://joyantamondal.com/)
+[Joyanta Jyoti Mondal](https://lepotatoguy.github.io)
 
 [Md. Golam Hossain](https://www.linkedin.com/in/mghossain)
 
 [Sriram Chellappan](https://cse.usf.edu/~sriramc/)
 
 [A. B. M. Alim Al Islam](https://sites.google.com/site/abmalimalislam/)
-
-## Paper Name: Orchestrating Image Retrieval and Storage over A Cloud System
-[Link](https://ieeexplore.ieee.org/abstract/document/9743811/)
 
 ## Abstract:
 
@@ -28,6 +29,27 @@ We all use Facebook to see people hanging out, celebrating their good times, ask
 
 Facebook also compresses images to show us images faster but those images get blurry while storing (you may know people saying "please send the picture on WhatsApp since it gets blurry on Facebook."). But our approach does not lose any quality of the images and on the other hand, gives a blazing fast loading time.
 
+## Abstract in Bengali:
+
 আমরা সবাই ই ফেসবুকে দেখি বিভিন্ন মানুষ বিভিন্ন জায়গায় যাচ্ছে, তাদের ভালো মূহুর্ত কাটাচ্ছে, খারাপ সময়ে সাহায্যের জন্য হাত বাড়াচ্ছ এবং এমন অনেক পোস্ট। তো আমরা অনেকসময় সেসব ফেসবুক স্ট্যাটাসে ছবি এড করে থাকি। এবং অন্যরা যখন সেই ছবিগুলো অন্য প্রান্ত থেকে দেখছে, তখন কিছুটা সময় লাগে ফেসবুক সার্ভার থেকে ডাউনলোড হয়ে ছবিটা লোড নেয়ার জন্য সেই ডিভাইসে (জিনিসটা আরও লক্ষণীয় যখন আমরা কম ইন্টারনেট স্পিড দেখতে পাই)। এজন্যে আমরা একটি সম্পূর্ণ নতুন ধরনের সমাধান নিয়ে এসেছি যা এমনভাবে ছবিটিকে কম্প্রেস করে সেইভ করবে সার্ভারে, পরবর্তীতে ছবিটি যখন লোড করা হবে, তখন স্বাভাবিকের তুলনায় সর্বোচ্চ ৬৯% দ্রুত ছবিটি লোড নিবে (এমনকি ধীরগতির ইন্টারনেটেও)। 
 
 ফেসবুকও ইতোমধ্যে ছবি কম্প্রেস করে সেইভ করে আমাদের দেখানোর চেষ্টা করে থাকে কিন্তু তারা তাদের মত রাখতে গিয়ে ছবিগুলো তুলনামূলক ঘোলা করে ফেলে (এজন্য আমরা কমবেশি দেখি অনেককেই বলতে "ছবিগুলো প্লিজ হোয়াটসএপে পাঠান। ফেসবুকে ছবিগুলো ঘোলা হয়ে যায়।")। আমরা সেই সমস্যার ও সমাধান করে ছবিগুলো সেইভ করে রাখি যাতে ছবির কোয়ালিটি নষ্ট না হয় এবং একইসাথে দ্রুতগতিতে ছবিগুলো লোড নেয়। 
+
+## Citation
+
+If you use this work, please cite the following paper:
+
+[1] J. Noor, M. N. H. Shanto, J. J. Mondal, M. G. Hossain, S. Chellappan and A. B. M. A. Al Islam, "Orchestrating Image Retrieval and Storage Over a Cloud System," in IEEE Transactions on Cloud Computing, vol. 11, no. 2, pp. 1794-1806, 1 April-June 2023, doi: 10.1109/TCC.2022.3162790. 
+
+```bibtex
+@ARTICLE{9743811,
+  author={Noor, Jannatun and Shanto, Md. Nazrul Huda and Mondal, Joyanta Jyoti and Hossain, Md. Golam and Chellappan, Sriram and Al Islam, A. B. M. Alim},
+  journal={IEEE Transactions on Cloud Computing}, 
+  title={Orchestrating Image Retrieval and Storage Over a Cloud System}, 
+  year={2023},
+  volume={11},
+  number={2},
+  pages={1794-1806},
+  doi={10.1109/TCC.2022.3162790}}
+
+```
