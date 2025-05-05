@@ -18,14 +18,16 @@ The final shell command is printed to stdout for manual use or further automatio
 Requirements:
 - Input files named '<N>_t.jpg' (1 ≤ N ≤ 1373) must exist.
 - `jpegtran` must be installed and accessible from the command line.
+- Here, the processed _t.jpg indicates a progressive image, while .jpg indicates a baseline image.
 """
 
 
 stuff = "jpegtran -optimize -progressive -scans script_final.txt -outfile "
 i=0
+number_of_images = 1373
 name = str(i)+"_p.jpg "+str(i)+".jpg"
 final_str = ""
-for i in range(1,1374):
+for i in range(1,(number_of_images+1)):
     name = str(i)+"_p.jpg "+str(i)+"_t.jpg"
     stuff = stuff + name
     final_str = final_str + stuff + " && "

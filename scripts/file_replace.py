@@ -24,7 +24,7 @@ for file in files:
     src=file
     print(file)
     if file.find(".py") != -1:
-        print("ekhanei problem")
+        print("We have a python file here.")
         pass
     elif file.find("_t.jpg") != -1:
         src_f = "/home/lepotatoguy/pjpeg/Scan 1 (copy)/dataset-final/processed_f/"+file

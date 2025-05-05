@@ -36,6 +36,45 @@ Facebook also compresses images to show us images faster but those images get bl
 
 ফেসবুকও ইতোমধ্যে ছবি কম্প্রেস করে সেইভ করে আমাদের দেখানোর চেষ্টা করে থাকে কিন্তু তারা তাদের মত রাখতে গিয়ে ছবিগুলো তুলনামূলক ঘোলা করে ফেলে (এজন্য আমরা কমবেশি দেখি অনেককেই বলতে "ছবিগুলো প্লিজ হোয়াটসএপে পাঠান। ফেসবুকে ছবিগুলো ঘোলা হয়ে যায়।")। আমরা সেই সমস্যার ও সমাধান করে ছবিগুলো সেইভ করে রাখি যাতে ছবির কোয়ালিটি নষ্ট না হয় এবং একইসাথে দ্রুতগতিতে ছবিগুলো লোড নেয়। 
 
+
+## Dependencies
+
+```
+Python 3.6
+
+opencv-python
+
+scikit-image
+
+imutils
+
+numpy
+
+pandas
+
+matplotlib
+
+jpegtran command-line tool (must be installed and in PATH)
+
+gnome-terminal #optional (for terminal-invoked scripts)
+
+```
+You can install by `pip install opencv-python scikit-image imutils numpy pandas matplotlib`
+
+
+## Usage
+
+1. Firstly choose your image. 
+2. Run `python3 scripts/run_pjpeg_script.py` or this command below using terminal:
+
+`jpegtran -optimize -progressive -scans script.txt -outfile name_of_progressive_file_you_want_to_give.jpg name_of_file_you_want_to_test.jpg`
+
+If you want to run a whole dataset: 
+1. Take the dataset folder and the name folder.
+2. Run progressive JPEG recompression on images 1.jpg to N.jpg: `python3 scripts/run_pjpeg_script_bulk.py`. Before running, please ensure you have the script file and set the names inside the file.
+
+Here, please note, the processed _t.jpg indicates a progressive image, while .jpg indicates a baseline/provided image. There can be .jpeg file too. To deal with those, you can use scripts/bulk_rename.py file.
+
 ## Citation
 
 If you use this work, please cite the following paper:

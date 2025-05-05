@@ -4,7 +4,7 @@ Created on 2021
 
 This script computes the average Structural Similarity Index (SSIM) between original and compressed
 images located in separate directories. For each image:
-- It pairs the original image ('.jpg') with its corresponding compressed version (with '_t.jpg' suffix).
+- It pairs the original image ('.jpg') with its corresponding progressive version (with '_t.jpg' suffix).
 - It loads both images, converts them to grayscale, and computes the SSIM score.
 - It tracks and prints the running average SSIM after each comparison.
 
@@ -35,6 +35,7 @@ from pandas import DataFrame
 import time
 
 startTime = time.time()
+
 
 
 # path = '/home/user/pjpeg/Scan 1 (copy)/dataset-final/final/processed/all' #for linux

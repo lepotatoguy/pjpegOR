@@ -11,6 +11,7 @@ It:
 - Invokes 'jpegtran' with optimization, progressive encoding, and a custom scan script to generate a recompressed output for each image.
 - Prints progress updates for each processed image, showing index and filename.
 - Records and prints the total execution time for the batch process.
+- Here, the processed _t.jpg indicates a progressive image, while .jpg indicates a baseline image.
 
 The script assumes:
 - The input filenames in 'readme.txt' follow the format '[basename].jpg'.
@@ -43,7 +44,7 @@ for name in arr:
             name = name[:-5]
             name_t = name+"_t.jpg" #progressive
             name_m = name+".jpg" #normal
-            scan_name = "script_final (compression)"
+            scan_name = "script_final (compression)" #put your script file name here
             subprocess.call(["jpegtran", "-optimize", "-progressive", "-scans", f"{scan_name}.txt", "-outfile", name_t, name_m])
             print(name + " Done.")        
 
