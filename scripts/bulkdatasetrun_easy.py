@@ -1,3 +1,24 @@
+"""
+Created on 2021
+
+@author: lepotatoguy
+
+This script batch-recompresses a list of JPEG images using 'jpegtran' with a custom scan optimization script.
+It:
+- Reads a list of image filenames from 'readme.txt' (assumed to contain one filename per line).
+- For each filename, strips the newline and file extension to obtain the base name.
+- Defines the source (baseline JPEG) and destination (progressive JPEG) filenames.
+- Invokes 'jpegtran' with optimization, progressive encoding, and a custom scan script to generate a recompressed output for each image.
+- Prints progress updates for each processed image, showing index and filename.
+- Records and prints the total execution time for the batch process.
+
+The script assumes:
+- The input filenames in 'readme.txt' follow the format '[basename].jpg'.
+- The JPEG files are present in the working directory.
+- A valid scan script named 'script_final (compression).txt' is available in the working directory.
+"""
+
+
 import subprocess
 import time
 startTime = time.time()

@@ -3,7 +3,7 @@
 """
 Created on Sat Feb 13 23:26:32 2021
 
-@author: joyanta.csebracu
+@author: lepotatoguy
 """
 # https://stackoverflow.com/questions/43332703/open-terminal-run-command-python
 

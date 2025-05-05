@@ -4,9 +4,14 @@
 Created on Sun Feb 14 22:15:20 2021
 
 @author: lepotatoguy
+
+This script checks for missing numbered image files in a specified directory.
+It assumes files are named with the format '<number>_t.jpg' and are numbered from 0 to 1335.
+For each existing file, it marks its index as present; at the end, it prints the indices of files that are missing.
 """
 
-arr = [-1] * 1336
+number_of_images = 1336
+arr = [-1] * number_of_images
 
 
 import os

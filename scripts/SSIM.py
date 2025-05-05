@@ -4,6 +4,15 @@
 Created on Tue Feb 16 15:37:25 2021
 
 @author: lepotatoguy
+
+This script computes the Structural Similarity Index (SSIM) between pairs of original and compressed
+images in a specified directory. For each image (with filenames assumed to encode numbers), it:
+- Identifies the corresponding pair based on filename suffixes ('_t.jpg' for transformed, '_p.jpg' for processed).
+- Loads both images, converts them to grayscale, and calculates SSIM.
+- Tracks a running total of SSIM scores and prints intermediate information.
+
+The script excludes non-image files and currently processes only filenames of length 9 (images numbered 100–999).
+Additional features for Excel output, other filename formats, and color output are included but commented out.
 """
 
 

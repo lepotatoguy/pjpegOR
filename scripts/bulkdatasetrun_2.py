@@ -3,7 +3,16 @@
 """
 Created on Sat Feb 13 23:26:32 2021
 
-@author: joyanta.csebracu
+@author: lepotatoguy
+
+This script performs batch JPEG recompression using the 'jpegtran' utility with custom scan optimization.
+It:
+- Defines a shell command that sequentially invokes 'jpegtran' to process JPEG files numbered 1.jpg to 104.jpg.
+- Applies the same scan script ('script_final.txt') to each image to generate optimized, progressive JPEG outputs.
+- Writes output files with '_p' appended before the '.jpg' extension (e.g., '1_p.jpg' for '1.jpg').
+- Executes the full shell command in a new GNOME Terminal window to run all recompression operations interactively.
+
+The script hardcodes filenames and assumes the source JPEG files and 'script_final.txt' are present in the working directory.
 """
 # https://stackabuse.com/executing-shell-commands-with-python/
 

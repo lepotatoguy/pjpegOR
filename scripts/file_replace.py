@@ -4,6 +4,12 @@
 Created on Sun Feb 14 21:55:38 2021
 
 @author: lepotatoguy
+
+This script organizes image files in the specified directory by moving them into subfolders based on their filename suffix:
+- Files ending with '_t.jpg' are moved to the 't' subfolder.
+- Files ending with '_p.jpg' are moved to the 'p' subfolder.
+- Python scripts and other files are ignored.
+The script skips specific entries (folders like 'p', 't', and this code 'file_replace.py') from processing.
 """
 
 import os

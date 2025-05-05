@@ -4,6 +4,19 @@
 Created on Mon Feb 15 16:31:53 2021
 
 @author: lepotatoguy
+
+This script analyzes a folder of image files to compute statistics about their dimensions and file sizes.
+For each image, it categorizes:
+- Width into ranges: 0–100 px, 100–1000 px, >1000 px
+- Height into ranges: 0–100 px, 100–1000 px, >1000 px
+- File size into ranges: 0–100 KB, 100–1000 KB, >1000 KB
+
+At the end, it reports:
+- Total number of images in each size range
+- Maximum width observed in each width range
+- Maximum height observed in each height range
+
+Assumes input directory contains only image files (except 'get_size.py', which is excluded).
 """
 import os
 import PIL

@@ -1,3 +1,18 @@
+"""
+Created on 2021
+@author: lepotatoguy
+
+This script organizes image files from a source directory into separate folders based on their type and status:
+- Files ending with '_t.jpg' (successfully transformed) are moved to the 'pjpeg' folder.
+- Files with zero size (indicating failed transformation) trigger moving their corresponding '.jpg' files into the 'failed_pjpeg' folder, and their names are logged in 'failed_pjpeg_list.txt'.
+- Other valid image files with a corresponding nonzero '_t.jpg' file are moved into the 'original' folder.
+- Non-image files (e.g., '.py', '.txt') are ignored.
+The script prints progress, handles missing files gracefully, and measures total processing time.
+"""
+
+
+
+
 import shutil
 import os
 import PIL
@@ -27,7 +42,7 @@ destination_failed_pjpeg = "/home/joyanta/pjpeg/failed_pjpeg"
 
 
 
-#Need to create the folder earlier so that the nobabs can enter
+#Need to create the folder earlier so that the images can enter
 
 
 
@@ -84,7 +99,7 @@ print("Time took: "+str(time_final) + " seconds")
 
 #Alternative
 
-#Need to create the folder earlier so that the nobabs can enter
+#Need to create the folder earlier so that the images can enter
 
 # for file in files:
 #     print(file)

@@ -3,7 +3,18 @@
 """
 Created on Sat Feb 13 23:26:32 2021
 
-@author: joyanta.csebracu
+@author: lepotatoguy
+
+This script automates the compression of multiple JPEG images using the `jpegtran` command-line tool
+with a predefined progressive scan script (`script_final.txt`). It builds a batch command to:
+- Process images named '1.jpg' to '104.jpg'.
+- Apply progressive JPEG optimization and save each output as '<N>_p.jpg'.
+
+The full command is executed inside a new GNOME terminal window, keeping the terminal open upon completion.
+
+Requirements:
+- `jpegtran` must be installed and accessible from the command line.
+- `gnome-terminal` is required (Linux GNOME desktop environment).
 """
 # https://stackabuse.com/executing-shell-commands-with-python/
 

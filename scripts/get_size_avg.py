@@ -3,7 +3,13 @@
 """
 Created on Mon Feb 15 16:31:53 2021
 
-@author: user
+@author: lepotatoguy
+
+This script calculates the average percentage reduction in file size between original JPEG images
+and their corresponding compressed versions (with '_t.jpg' suffix) stored in separate directories.
+It iterates through all files in the original images directory, compares each original file’s size
+with its compressed counterpart, prints the running average after each comparison, and outputs the
+final average percentage decrease across all files.
 """
 import os
 
