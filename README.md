@@ -41,25 +41,16 @@ Facebook also compresses images to show us images faster but those images get bl
 
 ```
 Python 3.6
-
 opencv-python
-
 scikit-image
-
 imutils
-
 numpy
-
 pandas
-
 matplotlib
-
 jpegtran command-line tool (must be installed and in PATH)
-
 gnome-terminal #optional (for terminal-invoked scripts)
-
 ```
-You can install by `pip install opencv-python scikit-image imutils numpy pandas matplotlib`
+You can install by `pip install opencv-python scikit-image imutils numpy pandas matplotlib` after creating your environment.
 
 
 ## Usage
@@ -74,6 +65,8 @@ If you want to run a whole dataset:
 2. Run progressive JPEG recompression on images 1.jpg to N.jpg: `python3 scripts/run_pjpeg_script_bulk.py`. Before running, please ensure you have the script file and set the names inside the file.
 
 Here, please note, the processed _t.jpg indicates a progressive image, while .jpg indicates a baseline/provided image. There can be .jpeg file too. To deal with those, you can use scripts/bulk_rename.py file.
+
+There are some extra scripts for your convenience in the `scripts` folder, that we used for our research, to ensure we get the output data most efficient way possible. 
 
 ## Citation
 
